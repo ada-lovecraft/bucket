@@ -23,7 +23,7 @@ app.controller 'MainController', ($scope, $filter, TableService, $http) ->
           className: 'col-md-2'
           format: (value, row) ->
             console.log 'file', row.file
-            return '<a href="http://bucket.codevinsky.com' + row.file + '">' + value + '</a>'
+            return '<a href="http://bucket.codevinsky.com/' + row.file + '">' + value + '</a>'
         file:
           label: 'Actions'
           format: (value) ->
