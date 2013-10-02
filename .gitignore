@@ -30,3 +30,7 @@ _public/
 
 # Bower stuff.
 bower_components/
+
+# Files
+fileStore/*
+fileStore.db

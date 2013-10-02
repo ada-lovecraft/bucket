@@ -49,8 +49,13 @@ angular.module('app')
 
 
 				updateProgress = (evt) ->
-					if evt.lengthComputable
-						console.log Math.round( evt.loaded * 100 / evt.total)
+					scope.$apply ->
+						if evt.lengthComputable
+							scope.progress.percent = Math.round( evt.loaded * 100 / evt.total)
+							scope.progress.message = scope.progress.percent + '%'
+						else
+							scope.progress.percent = 100
+							scope.progress.message = 'Uploading...'
 
 				uploadComplete = (evt) ->
 					console.log 'upload complete'
