@@ -23,6 +23,8 @@
     "dirty": "~0.9.7",
     "node-uuid": "~1.4.1",
     "mime": "~1.2.11",
-    "lodash":"*"
+    "lodash": "*",
+    "posix": "~1.0.3",
+    "multipart": "~0.1.5"
   }
 }
