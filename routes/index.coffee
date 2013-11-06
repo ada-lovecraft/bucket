@@ -4,7 +4,7 @@ dirty = require 'dirty'
 util = require 'util'
 path = require 'path'
 _ = require 'lodash'
-multipart = require 'multipart'
+
 
 
 db = dirty('fileStore.db')
